@@ -64,51 +64,37 @@ class ChartPresenter
         return $this;
     }
 
-    public function title($title = [])
+    public function getTransform()
     {
-        $this->transform->title = $title;
+        $this->display .= $this->transform->transform();
 
         return $this;
     }
 
-    public function subtitle($subtitle = [])
+    public function tes($tes)
     {
-        $this->transform->subtitle = $subtitle;
+        $this->display .= $tes;
 
         return $this;
     }
 
-    public function yaxis($data = [])
+    public function accessibility($accessibility = [])
     {
-        $this->transform->yAxis = $data;
+        $this->transform->accessibility = $accessibility;
 
         return $this;
     }
 
-    public function xaxis($data = [])
+    public function annotations($annotations = [])
     {
-        $this->transform->xAxis = $data;
+        $this->transform->annotations = $annotations;
 
         return $this;
     }
 
-    public function legend($legend = [])
+    public function boost($boost = [])
     {
-        $this->transform->legend = $legend;
-
-        return $this;
-    }
-
-    public function plotOptions($plotOptions = [])
-    {
-        $this->transform->plotOptions = $plotOptions;
-
-        return $this;
-    }
-
-    public function series($series = [])
-    {
-        $this->transform->series = $series;
+        $this->transform->boost = $boost;
 
         return $this;
     }
@@ -120,30 +106,163 @@ class ChartPresenter
         return $this;
     }
 
-    public function colors($series = [])
+    public function colors($colors = [])
     {
-        $this->transform->colors = $series;
+        $this->transform->colors = $colors;
 
         return $this;
     }
 
-    public function credits($credits = [])
+    public function data($data = [])
     {
-        $this->transform->credits = $credits;
+        $this->transform->data = $data;
 
         return $this;
     }
 
-    public function getTransform()
+    public function defs($defs = [])
     {
-        $this->display .= $this->transform->transform();
+        $this->transform->defs = $defs;
 
         return $this;
     }
 
-    public function tes($tes)
+    public function drilldown($drilldown = [])
     {
-        $this->display .= $tes;
+        $this->transform->drilldown = $drilldown;
+
+        return $this;
+    }
+
+    public function exporting($exporting = [])
+    {
+        $this->transform->exporting = $exporting;
+
+        return $this;
+    }
+
+    public function labels($labels = [])
+    {
+        $this->transform->labels = $labels;
+
+        return $this;
+    }
+
+    public function legend($legend = [])
+    {
+        $this->transform->legend = $legend;
+
+        return $this;
+    }
+
+    public function loading($loading = [])
+    {
+        $this->transform->loading = $loading;
+
+        return $this;
+    }
+
+    public function navigation($navigation = [])
+    {
+        $this->transform->navigation = $navigation;
+
+        return $this;
+    }
+
+    public function navigator($navigator = [])
+    {
+        $this->transform->navigator = $navigator;
+
+        return $this;
+    }
+
+    public function noData($nodata = [])
+    {
+        $this->transform->noData = $nodata;
+
+        return $this;
+    }
+
+    public function plotOptions($plotoptions = [])
+    {
+        $this->transform->plotOptions = $plotoptions;
+
+        return $this;
+    }
+
+    public function rangeSelector($rangeselector = [])
+    {
+        $this->transform->rangeSelector = $rangeselector;
+
+        return $this;
+    }
+
+    public function responsive($responsive = [])
+    {
+        $this->transform->responsive = $responsive;
+
+        return $this;
+    }
+
+    public function scrollbar($scrollbar = [])
+    {
+        $this->transform->scrollbar = $scrollbar;
+
+        return $this;
+    }
+
+    public function series($series = [])
+    {
+        $this->transform->series = $series;
+
+        return $this;
+    }
+
+    public function stockTools($stocktools = [])
+    {
+        $this->transform->stockTools = $stocktools;
+
+        return $this;
+    }
+
+    public function subtitle($subtitle = [])
+    {
+        $this->transform->subtitle = $subtitle;
+
+        return $this;
+    }
+
+    public function time($time = [])
+    {
+        $this->transform->time = $time;
+
+        return $this;
+    }
+
+    public function title($title = [])
+    {
+        $this->transform->title = $title;
+
+        return $this;
+    }
+
+    public function tooltip($tooltip = [])
+    {
+        $this->transform->tooltip = $tooltip;
+
+        return $this;
+    }
+
+    public function xAxis($data = [])
+    {
+        $this->transform->xAxis = $data;
+
+        return $this;
+    }
+
+    public function yAxis($data = [])
+    {
+        $this->transform->yAxis = $data;
 
         return $this;
     }
