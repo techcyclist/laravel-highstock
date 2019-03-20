@@ -5,7 +5,7 @@ namespace RezaAr\Highcharts\Classes\Presenters;
 class InitJsPresenter
 {
     public $generate;
-    public $highchart;
+    public $highstock;
     public $seriesLabel;
     public $exporting;
     public $exportData;
@@ -20,8 +20,8 @@ class InitJsPresenter
     {
         $init = '';
 
-        if ($this->highchart == true) {
-            $this->highchart = '<script src="//code.highcharts.com/highcharts.js"></script>';
+        if ($this->highstock == true) {
+            $this->highstock = '<script src="//code.highcharts.com/stock/highstock.js"></script>';
         }
 
         if ($this->seriesLabel == true) {
@@ -37,7 +37,7 @@ class InitJsPresenter
         }
 
         if ($this->init !== false) {
-            $init = $this->highchart.
+            $init = $this->highstock.
                 $this->seriesLabel.
                 $this->exporting.
                 $this->exportData;
