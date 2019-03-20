@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaAr\Highcharts\Classes\Presenters;
+namespace Techcyclist\Highstock\Classes\Presenters;
 
 class ContainerPresenter
 {
