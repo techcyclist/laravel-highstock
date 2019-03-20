@@ -1,4 +1,4 @@
-# Laravel 5 Highstock Packages
+# Laravel 5 Highstock Package
 
 [![Total Downloads](https://poser.pugx.org/techcyclist/highstock/downloads)](https://packagist.org/packages/techcyclist/highstock)
 [![Latest Stable Version](https://poser.pugx.org/techcyclist/highstock/v/stable)](https://packagist.org/packages/techcyclist/highstock)
