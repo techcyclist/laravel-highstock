@@ -1,11 +1,11 @@
-# Laravel 5 Highcharts Packages
+# Laravel 5 Highstock Packages
 
 [![Total Downloads](https://poser.pugx.org/muhamadrezaar/highcharts/d/total.svg)](https://packagist.org/packages/muhamadrezaar/highcharts)
 [![License](https://poser.pugx.org/muhamadrezaar/highcharts/license.svg)](https://packagist.org/packages/muhamadrezaar/highcharts)
 [![License](https://img.shields.io/github/release/julles/laravel-highcharts.svg?style=flat-square)](https://github.com/julles/laravel-highcharts/releases)
 [![StyleCi](https://github.styleci.io/repos/49810531/shield)](https://github.styleci.io/repos/49810531/shield)
 
-Package Highcharts for Laravel 5
+Package Highstock for Laravel 5
 
 ### Installations
 
@@ -18,11 +18,11 @@ In Laravel 5.5 the service provider will automatically get registered. In older 
 
 Provider :
 ```sh
-RezaAr\Highcharts\Provider::class,
+RezaAr\Highstock\Provider::class,
 ```
 Facade :
 ```sh
-'Chart' => RezaAr\Highcharts\Facade::class,
+'Chart' => RezaAr\Highstock\Facade::class,
 ```
 
 then publish the config 
@@ -149,7 +149,7 @@ the package will generate this code in yout view :
 
 ```
 
-cdn highcharts.js and others js only generated one time
+cdn highstock.js and others js only generated one time
 
 ## License
 
