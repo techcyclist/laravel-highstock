@@ -20,10 +20,6 @@ Provider :
 ```sh
 Techcyclist\Highstock\Provider::class,
 ```
-Facade :
-```sh
-'Stock' => Techcyclist\Highstock\Facade::class,
-```
 
 then publish the config 
 
