@@ -22,7 +22,7 @@ Techcyclist\Highstock\Provider::class,
 ```
 Facade :
 ```sh
-'Chart' => Techcyclist\Highstock\Facade::class,
+'Stock' => Techcyclist\Highstock\Facade::class,
 ```
 
 then publish the config 
