@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaAr\Highcharts;
+namespace Techcyclist\Highstock;
 
 use Illuminate\Support\Facades\Facade as FacadeClass;
 
@@ -8,6 +8,6 @@ class Facade extends FacadeClass
 {
     public static function getFacadeAccessor()
     {
-        return 'register-highcharts';
+        return 'register-highstock';
     }
 }
