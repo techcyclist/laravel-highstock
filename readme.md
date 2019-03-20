@@ -153,5 +153,5 @@ cdn highstock.js and others js only generated one time
 
 ## License
 
-https://reza.mit-license.org/
+https://mit-license.org/
 
