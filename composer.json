@@ -1,29 +1,33 @@
 {
-    "name": "muhamadrezaar/highcharts",
-    "description": "Laravel Highcarts Packages",
+    "name": "techcyclist/highstock",
+    "description": "Laravel Highstock Packages",
     "type": "library",
     "license": "MIT",
-    "keywords" : ["laravel" , "highcharts","packages"],
+    "keywords" : ["laravel" , "highstock","packages"],
     "authors": [
         {
             "name": "Muhamad Reza Abdul Rohim",
             "email": "reza.wikrama3@gmail.com"
+        },
+        {
+            "name": "Tim Norton",
+            "email": "timothy.norton@gmail.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4": {
-            "RezaAr\\Highcharts\\": "src/"
+            "Techcyclist\\Highstock\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "RezaAr\\Highcharts\\Provider"
+                "Techcyclist\\Highstock\\Provider"
             ],
             "aliases": {
-                "Chart": "RezaAr\\Highcharts\\Facade"
+                "Chart": "Techcyclist\\Highstock\\Facade"
             }
         }
     }
