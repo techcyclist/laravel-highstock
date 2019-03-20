@@ -335,7 +335,7 @@ class JsTransformerPresenter
         $allString = substr($allString, 0, -1);
         $allString = $this->replacer($allString);
         $generate = '<script type="text/javascript">';
-        $generate .= 'Highstock.chart({'.$allString.'});';
+        $generate .= 'Highcharts.stockChart({'.$allString.'});';
         $generate .= '</script>';
 
         return $generate;
