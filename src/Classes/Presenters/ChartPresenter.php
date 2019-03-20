@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaAr\Highcharts\Classes\Presenters;
+namespace Techcyclist\Highstock\Classes\Presenters;
 
 class ChartPresenter
 {
@@ -12,18 +12,18 @@ class ChartPresenter
     {
         $this->display = '';
         $this->js = new InitJsPresenter();
-        $this->js->highchart = config('highchart.series_label_js');
-        $this->js->seriesLabel = config('highchart.highchart_js');
-        $this->js->exporting = config('highchart.exporting_js');
-        $this->js->exportData = config('highchart.export_data_js');
+        $this->js->highstock = config('highstock.series_label_js');
+        $this->js->seriesLabel = config('highstock.highstock_js');
+        $this->js->exporting = config('highstock.exporting_js');
+        $this->js->exportData = config('highstock.export_data_js');
         $this->container = new ContainerPresenter();
         $this->transform = new JsTransformerPresenter();
         $this->title = [];
     }
 
-    public function highcart_js($bool = true)
+    public function highstock_js($bool = true)
     {
-        $this->js->highchart = $bool;
+        $this->js->highstock = $bool;
 
         return $this;
     }
