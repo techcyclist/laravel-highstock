@@ -1,30 +1,30 @@
 # Laravel 5 Highstock Packages
 
-[![Total Downloads](https://poser.pugx.org/muhamadrezaar/highcharts/d/total.svg)](https://packagist.org/packages/muhamadrezaar/highcharts)
-[![License](https://poser.pugx.org/muhamadrezaar/highcharts/license.svg)](https://packagist.org/packages/muhamadrezaar/highcharts)
-[![License](https://img.shields.io/github/release/julles/laravel-highcharts.svg?style=flat-square)](https://github.com/julles/laravel-highcharts/releases)
+[![Total Downloads](https://poser.pugx.org/techcyclist/highstock/d/total.svg)](https://packagist.org/packages/techcyclist/highstock)
+[![License](https://poser.pugx.org/techcyclist/highstock/license.svg)](https://packagist.org/packages/techcyclist/highstock)
+[![License](https://img.shields.io/github/release/techcyclist/laravel-highstock.svg?style=flat-square)](https://github.com/techcyclist/laravel-highstock/releases)
 [![StyleCi](https://github.styleci.io/repos/49810531/shield)](https://github.styleci.io/repos/49810531/shield)
 
 Package Highstock for Laravel 5
 
-Forked from Laravel Highcharts (https://github.com/julles/laravel-highcharts) and modified for Highstock.
+Forked from Laravel Highcharts (julles/laravel-highcharts) and modified for Highstock.
 
 ### Installation
 
 Add Package to composer.json
 
 ```sh
-composer require muhamadrezaar/highcharts:dev-master
+composer require techcyclist/highstock:dev-master
 ```
 In Laravel 5.5 the service provider will automatically get registered. In older versions of the framework just add the service provider and facade in config/app.php file:
 
 Provider :
 ```sh
-RezaAr\Highstock\Provider::class,
+Techcyclist\Highstock\Provider::class,
 ```
 Facade :
 ```sh
-'Chart' => RezaAr\Highstock\Facade::class,
+'Chart' => Techcyclist\Highstock\Facade::class,
 ```
 
 then publish the config 
