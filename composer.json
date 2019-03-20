@@ -6,12 +6,12 @@
     "keywords" : ["laravel" , "highstock","packages"],
     "authors": [
         {
-            "name": "Muhamad Reza Abdul Rohim",
-            "email": "reza.wikrama3@gmail.com"
-        },
-        {
             "name": "Tim Norton",
             "email": "timothy.norton@gmail.com"
+        },
+        {
+            "name": "Muhamad Reza Abdul Rohim",
+            "email": "reza.wikrama3@gmail.com"
         }
     ],
     "minimum-stability": "stable",
