@@ -29,14 +29,7 @@ then publish the config
 
 ``` sh
 php artisan vendor:publish
-```
 
-### Basic Usage
-
-In Controller or Other Class
-
-```sh
-Coming soon
 ```
 
 ## License
