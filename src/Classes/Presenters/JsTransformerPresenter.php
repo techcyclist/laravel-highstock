@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaAr\Highcharts\Classes\Presenters;
+namespace Techcyclist\Highstock\Classes\Presenters;
 
 class JsTransformerPresenter
 {
@@ -151,7 +151,7 @@ class JsTransformerPresenter
         $allString = substr($allString, 0, -1);
         $allString = $this->replacer($allString);
         $generate = '<script type="text/javascript">';
-        $generate .= 'Highcharts.chart({'.$allString.'});';
+        $generate .= 'Highstock.chart({'.$allString.'});';
         $generate .= '</script>';
 
         return $generate;
