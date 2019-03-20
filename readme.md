@@ -7,7 +7,9 @@
 
 Package Highstock for Laravel 5
 
-### Installations
+Forked from Laravel Highcharts (https://github.com/julles/laravel-highcharts) and modified for Highstock.
+
+### Installation
 
 Add Package to composer.json
 
