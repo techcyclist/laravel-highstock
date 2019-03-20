@@ -1,6 +1,6 @@
 # Laravel 5 Highstock Packages
 
-[![Total Downloads](https://poser.pugx.org/techcyclist/highstock/d/total.svg)](https://packagist.org/packages/techcyclist/highstock)
+[![Total Downloads](https://poser.pugx.org/techcyclist/laravel-highstock/d/total.svg)](https://packagist.org/packages/techcyclist/highstock)
 [![License](https://poser.pugx.org/techcyclist/highstock/license.svg)](https://packagist.org/packages/techcyclist/highstock)
 [![License](https://img.shields.io/github/release/techcyclist/laravel-highstock.svg?style=flat-square)](https://github.com/techcyclist/laravel-highstock/releases)
 [![StyleCi](https://github.styleci.io/repos/49810531/shield)](https://github.styleci.io/repos/49810531/shield)
