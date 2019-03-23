@@ -28,6 +28,70 @@ php artisan vendor:publish
 
 ```
 
+### Usage
+Your controller could look something like this:
+
+```
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Techcyclist\Highstock\Highstock;
+
+class HighStockController extends Controller
+{
+    public function modelReturnsChart($data)
+    {
+
+        $stockchart = new Highstock();
+
+        $modelreturnschart = $stockchart->chart([
+                'type'     => 'line',
+                'renderTo' => 'chartDiv',
+            ])
+            ->rangeSelector([
+                'selected'  => 1,
+            ])
+            ->series(
+                [
+                    [
+                        'name'  => 'New Chart',
+                        'data'  => $data,
+                        'tooltip'   => [
+                            'valuedecimals' => 2,
+                        ],
+                    ],
+                ]
+            )
+            ->title([
+                'text' => 'New Chart',
+            ])
+
+            ->display();
+
+        return $modelreturnschart;
+
+    }
+
+}
+```
+
+You could return to a view with the object, or do this in a view:
+
+```
+$highstockcontroller = new \App\Http\Controllers\HighStockController();
+$modelreturnschart = $highstockcontroller->modelReturnsChart($data);
+```
+
+Finally, show the chart in the view:
+
+```
+<div id="chartDiv" style="height: 400px; min-width: 310px"></div>
+
+{!! $modelreturnschart !!}
+```
+
 ## License
 
 https://mit-license.org/
