@@ -94,7 +94,7 @@ Finally, show the chart in the view:
 
 And you'll get a chart looking something like this:
 
-https://github.com/techcyclist/laravel-highstock/blob/master/Screen%20Shot%202019-03-23%20at%208.31.43%20AM.png
+![Highstock Chart](https://github.com/techcyclist/laravel-highstock/blob/master/Screen%20Shot%202019-03-23%20at%208.31.43%20AM.png)
 
 ## License
 
