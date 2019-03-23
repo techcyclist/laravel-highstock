@@ -92,6 +92,10 @@ Finally, show the chart in the view:
 {!! $modelreturnschart !!}
 ```
 
+And you'll get a chart looking something like this:
+
+
+
 ## License
 
 https://mit-license.org/
