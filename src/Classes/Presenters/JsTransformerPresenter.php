@@ -178,9 +178,9 @@ class JsTransformerPresenter
 
     public function encode_no_data()
     {
-        $data = $this->noData;
+        $data = $this->nodata;
 
-        $this->noData = !empty($data) ? 'noData: '.json_encode($data, JSON_UNESCAPED_UNICODE).',' : null;
+        $this->nodata = !empty($data) ? 'noData: '.json_encode($data, JSON_UNESCAPED_UNICODE).',' : null;
 
         return $this;
     }
@@ -315,7 +315,6 @@ class JsTransformerPresenter
         $this->encode_boost();
         $this->encode_chart();
         $this->encode_colors();
-        $this->encode_credits();
         $this->encode_data();
         $this->encode_defs();
         $this->encode_drilldown();
@@ -325,20 +324,20 @@ class JsTransformerPresenter
         $this->encode_loading();
         $this->encode_navigation();
         $this->encode_navigator();
-        $this->encode_nodata();
-        $this->encode_plotOptions();
-        $this->encode_rangeSelector();
+        $this->encode_no_data();
+        $this->encode_plot_options();
+        $this->encode_range_selector();
         $this->encode_responsive();
         $this->encode_scrollbar();
         $this->encode_series();
-        $this->encode_stockTools();
-        $this->encode_subtitle();
+        $this->encode_stock_tools();
+        $this->encode_sub_title();
         $this->encode_time();
         $this->encode_title();
         $this->encode_tooltip();
-        $this->encode_transform();
-        $this->encode_yAxis();
-        $this->encode_xAxis();
+        $this->encode_y_axis();
+        $this->encode_x_axis();
+        $this->credits();
 
         $allString = $this->title.
         $this->accessibility.
@@ -346,7 +345,6 @@ class JsTransformerPresenter
         $this->boost.
         $this->chart.
         $this->colors.
-        $this->credits.
         $this->data.
         $this->defs.
         $this->drilldown.
@@ -366,9 +364,9 @@ class JsTransformerPresenter
         $this->subtitle.
         $this->title.
         $this->tooltip.
-        $this->transform.
         $this->yAxis.
         $this->xAxis.
+        $this->credits;
 
         $allString = substr($allString, 0, -1);
         $allString = $this->replacer($allString);
