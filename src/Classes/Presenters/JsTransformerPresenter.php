@@ -310,27 +310,66 @@ class JsTransformerPresenter
 
     public function transform()
     {
-        $this->encode_title();
-        $this->encode_sub_title();
-        $this->encode_y_axis();
-        $this->encode_x_axis();
-        $this->encode_legend();
-        $this->encode_plot_options();
-        $this->encode_series();
+        $this->encode_accessibility();
+        $this->encode_annotations();
+        $this->encode_boost();
         $this->encode_chart();
         $this->encode_colors();
-        $this->credits();
+        $this->encode_container();
+        $this->encode_credits();
+        $this->encode_data();
+        $this->encode_defs();
+        $this->encode_drilldown();
+        $this->encode_exporting();
+        $this->encode_labels();
+        $this->encode_legend();
+        $this->encode_loading();
+        $this->encode_navigation();
+        $this->encode_navigator();
+        $this->encode_nodata();
+        $this->encode_plotOptions();
+        $this->encode_rangeSelector();
+        $this->encode_responsive();
+        $this->encode_scrollbar();
+        $this->encode_series();
+        $this->encode_stockTools();
+        $this->encode_subtitle();
+        $this->encode_time();
+        $this->encode_title();
+        $this->encode_tooltip();
+        $this->encode_transform();
+        $this->encode_yAxis();
+        $this->encode_xAxis();
 
         $allString = $this->title.
-        $this->subtitle.
-        $this->yAxis.
-        $this->xAxis.
-        $this->legend.
-        $this->plotOptions.
-        $this->series.
+        $this->accessibility.
+        $this->annotations.
+        $this->boost.
         $this->chart.
         $this->colors.
-        $this->credits;
+        $this->credits.
+        $this->data.
+        $this->defs.
+        $this->drilldown.
+        $this->exporting.
+        $this->labels.
+        $this->legend.
+        $this->loading.
+        $this->navigation.
+        $this->navigator.
+        $this->nodata.
+        $this->plotOptions.
+        $this->rangeSelector.
+        $this->responsive.
+        $this->scrollbar.
+        $this->series.
+        $this->stockTools.
+        $this->subtitle.
+        $this->title.
+        $this->tooltip.
+        $this->transform.
+        $this->yAxis.
+        $this->xAxis.
 
         $allString = substr($allString, 0, -1);
         $allString = $this->replacer($allString);
