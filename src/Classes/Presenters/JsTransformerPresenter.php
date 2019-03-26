@@ -315,7 +315,6 @@ class JsTransformerPresenter
         $this->encode_boost();
         $this->encode_chart();
         $this->encode_colors();
-        $this->encode_container();
         $this->encode_credits();
         $this->encode_data();
         $this->encode_defs();
